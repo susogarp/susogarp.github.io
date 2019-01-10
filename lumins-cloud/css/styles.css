@@ -443,8 +443,16 @@ ul {
     margin-bottom: 3rem;
   }
 
+  .header__content {
+    padding-right: 0;
+  }
+
   .header__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .header__text {
+    font-size: 1rem;
   }
 
   .section-title {
@@ -457,7 +465,7 @@ ul {
   }
 
   .card {
-    width: 50%;
+    width: 70%;
     margin-bottom: 2.5rem;
     margin-right: 0;
   }
