@@ -1,0 +1,20 @@
+.footer {
+  background-color: $color_secondary;
+  // height: 200px;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__copy {
+    color: rgba($white, .7);
+  }
+
+  &__link {
+    @extend .footer__copy;
+  }
+}
+
+//-----------------------------------------------------------------------------------------------
+  // For the menu in footer go to it's section in modules/nav
+//-----------------------------------------------------------------------------------------------

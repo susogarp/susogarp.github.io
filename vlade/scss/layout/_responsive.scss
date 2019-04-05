@@ -1,0 +1,47 @@
+@media only screen and (max-width: $bp-desktop) {
+  .container {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: $bp-max-tablet) {
+
+  .slide, .banner {
+    background-size: cover;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 14.5rem);
+    grid-row-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: $bp-min-tablet) {
+  .body-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mini-card__img-container, .event__img-container {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: $bp-min-phone) {
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

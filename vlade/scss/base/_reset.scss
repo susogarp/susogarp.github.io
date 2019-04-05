@@ -1,0 +1,63 @@
+//-------------------------------------------------------------------------------------------------
+  // Base styles
+//-------------------------------------------------------------------------------------------------
+
+// Aparentemente esto es un poco mejor que aplicar box-sizing directamente 
+// a todos los elemntos usando el selector *
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+//-----------------------------------------------------------------------------------------------
+  // Resets 
+//-----------------------------------------------------------------------------------------------
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+input {
+  font-family: 'Ubuntu';
+  font-size: 1rem;
+
+  &::placeholder {
+    font-family: 'Ubuntu';
+    font-size: 1rem;
+  }
+}
+
+input, button {
+  border: none;
+}
+
+//-----------------------------------------------------------------------------------------------
+  // Esto no deberia ir aqui
+//-----------------------------------------------------------------------------------------------
+
+body {
+  background-color: $color_bg;
+  color: $white;
+}

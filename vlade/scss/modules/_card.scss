@@ -1,0 +1,100 @@
+//-----------------------------------------------------------------------------------------------
+  // Cards
+//-----------------------------------------------------------------------------------------------
+
+.card-grid {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: $color_secondary;
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+
+  &__img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+
+    &-container {
+      height: 180px;
+    }
+  }
+
+  &__title {
+    color: rgba($white, .8);
+    font-family: 'Sarabun';
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
+  }
+
+  &__text {
+    font-family: 'Ubuntu';
+    color: rgba($white, .5);
+    padding-bottom: 1rem;
+  }
+
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 0.875rem;
+  }
+
+  &__tag {
+    background-color: $color_highlight;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+    }
+
+  &__date {
+    color: rgba($white, .5);
+  }
+
+  &__border {
+    background: $color_primary;
+    height: 4px;
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+//-----------------------------------------------------------------------------------------------
+  // Mini-cards
+//-----------------------------------------------------------------------------------------------
+
+.mini-card {
+  background-color: $color_highlight;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  &__img {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+    &-container {
+      width: 30%;
+    }
+  }
+
+  &__title {
+    font-family: 'Sarabun';
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba($white, .7);
+    padding: 0.625rem 1rem;
+    align-self: center;
+  }
+
+  &__border {
+    background: $color_primary;
+    width: 4px;
+    border-radius: 0 6px 6px 0;
+  }
+}
