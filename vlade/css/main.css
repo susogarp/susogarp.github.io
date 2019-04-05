@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/header.jpg");
   background-size: 150%;
   background-position: 50% 12%;
   height: 22rem;
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slide {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../../img/slide.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/slide.jpg);
   background-size: 110%;
   background-position: 50% 12%;
   background-repeat: no-repeat;
@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../../img/video.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/video.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 6px;
@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../../img/banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/banner.jpg);
   background-size: 110%;
   background-position: 50% 12%;
   padding: 1rem;
@@ -559,7 +559,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsletter {
   height: 20rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../img/newsletter.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/newsletter.jpg);
   background-size: cover;
   margin: 5rem 0;
   display: flex;
