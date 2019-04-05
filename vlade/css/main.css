@@ -1,0 +1,705 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+input {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+}
+input::placeholder {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+}
+
+input, button {
+  border: none;
+}
+
+body {
+  background-color: #0F0F0F;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Sarabun", "Ubuntu", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr 3fr;
+  grid-template-areas: ". . nav" ". . ." "logo . .";
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.logo {
+  align-self: center;
+  grid-area: logo;
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.heading {
+  grid-area: title1;
+  padding-left: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+  align-items: start;
+}
+
+.card__container {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.side-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.top-line {
+  height: 6px;
+  background-color: #256EFF;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/header.jpg);
+  background-size: 150%;
+  background-position: 50% 12%;
+  height: 22rem;
+}
+
+.logo {
+  font-family: "Righteous";
+  font-size: 3.375rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.32);
+}
+.logo__hl {
+  color: #CE2840;
+}
+
+.footer {
+  background-color: #191919;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__copy, .footer__link {
+  color: rgba(255, 255, 255, 0.7);
+}
+.heading {
+  margin-bottom: 2rem;
+}
+.heading__title, .newsletter__title {
+  font-family: "Raleway";
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+  margin-top: 2rem;
+  transform: skew(-18deg);
+  font-size: 1.125rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #0F0F0F;
+  padding: 1rem 2rem;
+  transition: 0.3s linear, opacity 0.3s linear;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.menu__item {
+  margin-right: 0.5rem;
+}
+.menu__item--last {
+  margin-right: 0;
+}
+.menu__link {
+  padding: 1rem 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu__link:hover {
+  color: #256EFF;
+}
+
+.menu__item, .menu-toggle__icon {
+  transform: skew(18deg);
+  font-size: 1.25rem;
+}
+
+.menu-toggle {
+  order: 2;
+  padding: 1rem 1.3rem;
+  background-color: #256EFF;
+}
+
+.nav-sticky {
+  position: fixed;
+  right: 2rem;
+  z-index: 100;
+}
+
+.menu--footer {
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 1.5rem;
+}
+
+.menu__item--footer {
+  transform: skew(0deg);
+}
+
+.menu__item--line {
+  opacity: 0.3;
+}
+
+.slide {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../../img/slide.jpg);
+  background-size: 110%;
+  background-position: 50% 12%;
+  background-repeat: no-repeat;
+  height: 25rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.slide__title {
+  font-family: "Sarabun";
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.slide__controls {
+  align-self: end;
+  display: flex;
+}
+
+.slide__content {
+  display: flex;
+  align-items: end;
+}
+
+.slide__data {
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+}
+
+.slide__controls__button {
+  background-color: #ffffff;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 100px;
+  margin: 0 0.3rem;
+}
+.slide__controls__button--active {
+  background-color: #256EFF;
+}
+
+.slide__text, .slide__date {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.slide__tag {
+  background-color: #191919;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.slide__icon {
+  font-size: 0.75rem;
+}
+
+.box {
+  background-color: #191919;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 2rem;
+}
+.box__content {
+  padding: 1rem;
+}
+.box__title {
+  font-family: "Sarabun";
+  font-size: 1.25rem;
+  text-align: center;
+  flex-grow: 1;
+}
+.box__icon {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.box__header {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.search-bar {
+  display: flex;
+  padding: 0;
+}
+.search-bar__input {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  padding: 0.8rem;
+}
+
+.live {
+  box-shadow: inset 0 0 0 2px #CE2840;
+}
+
+.box__header--live {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box__it {
+  display: flex;
+  align-items: center;
+}
+.box__icon--live {
+  font-size: 0.875rem;
+  color: #CE2840;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+}
+.box__title--live {
+  font-size: 1rem;
+  text-align: left;
+  flex-grow: 0;
+}
+.box__time {
+  background-color: #CE2840;
+  padding: 0.1875rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-link {
+  width: 50%;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+}
+.team--reverse {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+.team__img-container {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+.team__img-container--reverse {
+  order: 3;
+}
+.team__img {
+  object-fit: contain;
+}
+.team__score {
+  background-color: #272727;
+  padding: 0.375rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.team__name {
+  color: rgba(255, 255, 255, 0.5);
+}
+.team__name--reverse {
+  order: 1;
+}
+
+.event {
+  background-color: #272727;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.event__content {
+  color: rgba(255, 255, 255, 0.7);
+}
+.event__title {
+  font-family: "Sarabun";
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+}
+.event__date {
+  font-size: 0.875rem;
+}
+
+.event__img {
+  border-radius: 100px;
+}
+.event__img-container {
+  margin-right: 1rem;
+  width: 20%;
+  border-radius: 100px;
+}
+
+.video {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../../img/video.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  height: 10rem;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.video__icon {
+  align-self: end;
+  font-size: 1.5rem;
+}
+
+.card-grid {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #191919;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.card__img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+.card__img-container {
+  height: 180px;
+}
+.card__title {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Sarabun";
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+.card__text {
+  font-family: "Ubuntu";
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 1rem;
+}
+.card__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-size: 0.875rem;
+}
+.card__tag {
+  background-color: #272727;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+}
+.card__date {
+  color: rgba(255, 255, 255, 0.5);
+}
+.card__border {
+  background: #256EFF;
+  height: 4px;
+  border-radius: 0 0 6px 6px;
+}
+
+.mini-card {
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.mini-card__img {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.mini-card__img-container {
+  width: 30%;
+}
+.mini-card__title {
+  font-family: "Sarabun";
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.625rem 1rem;
+  align-self: center;
+}
+.mini-card__border {
+  background: #256EFF;
+  width: 4px;
+  border-radius: 0 6px 6px 0;
+}
+
+.banner-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 14.5rem;
+  grid-column-gap: 2rem;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../../img/banner.jpg);
+  background-size: 110%;
+  background-position: 50% 12%;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+}
+.banner__title {
+  font-size: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+.banner__text {
+  font-family: "Ubuntu";
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter {
+  height: 20rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../img/newsletter.jpg);
+  background-size: cover;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter__title {
+  color: white;
+  text-align: center;
+}
+.newsletter__form {
+  display: flex;
+  padding-top: 2rem;
+  width: 90%;
+  min-width: 440px;
+}
+.newsletter__input {
+  transform: skew(18deg);
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1rem 2rem;
+  flex-grow: 1;
+}
+.newsletter__input-container {
+  transform: skew(-18deg);
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-right: 1rem;
+  display: flex;
+  flex-grow: 1;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Sarabun";
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.7);
+}
+.btn__content {
+  transform: skew(18deg);
+  display: flex;
+  align-items: end;
+}
+.btn__icon {
+  padding-left: 0.75rem;
+}
+
+.btn--primary {
+  background-color: #256EFF;
+}
+
+.btn--secondary {
+  background-color: #272727;
+}
+
+.btn--skew {
+  border: 2px solid #256EFF;
+  transform: skew(-18deg);
+  align-self: center;
+}
+
+.search-bar__button {
+  padding: 0 1.5rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.btn--block {
+  border-radius: 0px 0px 6px 6px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.btn--newsletter {
+  border: 2px solid #256EFF;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.btn--md {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.btn--lg {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 1124px) {
+  .slide, .banner {
+    background-size: cover;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 14.5rem);
+    grid-row-gap: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .body-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mini-card__img-container, .event__img-container {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
