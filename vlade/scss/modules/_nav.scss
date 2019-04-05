@@ -32,7 +32,7 @@
     padding: 1rem .8rem;
     color: rgba($white, .7);
 
-    &:hover {
+    &:hover, &:focus {
       color: $color_primary;
     }
   }
@@ -70,6 +70,7 @@
 .menu--footer {
   background-color: rgba($white, 0);
   margin-bottom: 1.5rem;
+  box-shadow: 0 0 0 0 rgba($white, 0);
 }
 
 .menu__item--footer {

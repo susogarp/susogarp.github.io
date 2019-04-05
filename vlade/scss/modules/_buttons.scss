@@ -5,6 +5,7 @@
   padding: 1rem;
   background-color: rgba($white, 0);
   color: rgba($white, .7);
+  transition: .3s;
 
   &__content {
     transform: skew(18deg);
@@ -29,12 +30,22 @@
   border: 2px solid $color_primary;
   transform: skew(-18deg);
   align-self: center;
+
+  &:hover, &:focus {
+    background-color: $color_primary;
+    color: rgba($white, 1);
+  }
 }
 
 .search-bar__button {
     padding: 0 1.5rem;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+
+    &:hover, &:focus {
+      background-color: $color_primary;
+      color: rgba($white, 1);
+    }
   }
 
 .btn--block {
@@ -42,6 +53,11 @@
   font-weight: 700;
   display: flex;
   justify-content: center;
+
+  &:hover, &:focus {
+    background-color: $color_primary;
+    color: rgba($white, 1);
+  }
 }
 
 .btn--newsletter {

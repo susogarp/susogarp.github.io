@@ -46,6 +46,10 @@ body {
   color: #ffffff;
 }
 
+a {
+  transition: 0.2s;
+}
+
 body {
   font-family: "Sarabun", "Ubuntu", sans-serif;
 }
@@ -145,6 +149,10 @@ h1, h2, h3, h4, h5, h6 {
 .footer__copy, .footer__link {
   color: rgba(255, 255, 255, 0.7);
 }
+.footer__link:hover, .footer__link:focus {
+  color: #256EFF;
+}
+
 .heading {
   margin-bottom: 2rem;
 }
@@ -180,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0.8rem;
   color: rgba(255, 255, 255, 0.7);
 }
-.menu__link:hover {
+.menu__link:hover, .menu__link:focus {
   color: #256EFF;
 }
 
@@ -204,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu--footer {
   background-color: rgba(255, 255, 255, 0);
   margin-bottom: 1.5rem;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 }
 
 .menu__item--footer {
@@ -603,6 +612,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
 }
 .btn__content {
   transform: skew(18deg);
@@ -626,11 +636,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: skew(-18deg);
   align-self: center;
 }
+.btn--skew:hover, .btn--skew:focus {
+  background-color: #256EFF;
+  color: white;
+}
 
 .search-bar__button {
   padding: 0 1.5rem;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+.search-bar__button:hover, .search-bar__button:focus {
+  background-color: #256EFF;
+  color: white;
 }
 
 .btn--block {
@@ -638,6 +656,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   display: flex;
   justify-content: center;
+}
+.btn--block:hover, .btn--block:focus {
+  background-color: #256EFF;
+  color: white;
 }
 
 .btn--newsletter {

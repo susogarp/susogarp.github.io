@@ -12,6 +12,10 @@
 
   &__link {
     @extend .footer__copy;
+    
+    &:hover, &:focus {
+      color: $color_primary;
+    }
   }
 }
 
