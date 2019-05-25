@@ -10,6 +10,12 @@
   background-color: $color_secondary;
   border-radius: 6px;
   box-shadow: $box-shadow;
+  transition: $transition-card;
+
+  &:hover{
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.32);
+    transform: translate(0, -0.2rem);
+  }
 
   &__img {
     border-top-left-radius: 6px;
@@ -70,6 +76,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  transition: $transition-card;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    transform: translate(0, -0.1rem);
+  }
 
   &__img {
     border-top-left-radius: 6px;

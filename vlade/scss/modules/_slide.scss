@@ -20,7 +20,7 @@
 }
 
 .slide__controls {
-  align-self: end;
+  align-self: flex-end;
   display: flex;
 }
 
@@ -33,7 +33,7 @@
   width: 20%;
   display: flex;
   flex-flow: column;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .slide__controls__button {

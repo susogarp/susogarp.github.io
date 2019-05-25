@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slide__controls {
-  align-self: end;
+  align-self: flex-end;
   display: flex;
 }
 
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 20%;
   display: flex;
   flex-flow: column;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .slide__controls__button {
@@ -411,6 +411,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  transition: transform linear 0.1s;
+}
+.event:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  transform: translate(0, -0.1rem);
 }
 .event__content {
   color: rgba(255, 255, 255, 0.7);
@@ -464,6 +469,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #191919;
   border-radius: 6px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  transition: transform linear 0.1s;
+}
+.card:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.32);
+  transform: translate(0, -0.2rem);
 }
 .card__img {
   border-top-left-radius: 6px;
@@ -512,6 +522,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  transition: transform linear 0.1s;
+}
+.mini-card:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  transform: translate(0, -0.1rem);
 }
 .mini-card__img {
   border-top-left-radius: 6px;
@@ -554,7 +569,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   display: flex;
   flex-flow: column;
-  justify-content: end;
+  justify-content: flex-end;
+  transition: transform linear 0.1s;
+}
+.banner:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.32);
+  transform: translate(0, -0.1rem);
 }
 .banner__title {
   font-size: 1.5rem;
