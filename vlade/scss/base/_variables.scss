@@ -45,7 +45,8 @@ $transition-card: transform linear 0.1s;
 //-------------------------------------------------------------------------------------------------
   // Responsive breakpoints
 //-------------------------------------------------------------------------------------------------
-$bp-desktop: 1280px;
-$bp-max-tablet: 1124px;
+$bp-max-desktop: 1280px;
+$bp-min-desktop: 1124px;
+$bp-max-tablet: 926px;
 $bp-min-tablet: 768px;
 $bp-min-phone: 480px;

@@ -1,10 +1,10 @@
-@media only screen and (max-width: $bp-desktop) {
+@media only screen and (max-width: $bp-max-desktop) {
   .container {
     width: 96%;
   }
 }
 
-@media only screen and (max-width: $bp-max-tablet) {
+@media only screen and (max-width: $bp-min-desktop) {
 
   .slide, .banner {
     background-size: cover;
@@ -20,6 +20,12 @@
   }
 }
 
+@media only screen and (max-width: $bp-max-tablet) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: $bp-min-tablet) {
   .body-container {
     grid-template-columns: 1fr;
@@ -32,9 +38,40 @@
   .mini-card__img-container, .event__img-container {
     width: 10%;
   }
+
+  .side-container {
+    margin-top: 2rem;
+  }
+
+  .newsletter__form {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .newsletter__input-container {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .menu--footer {
+    flex-direction: column;
+  }
+
+  .menu__item--footer {
+    margin-bottom: 2.5rem;
+    margin-right: 0;
+  }
+
+  .menu__item--line {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: $bp-min-phone) {
+
+  .header {
+    background-size: 200%;
+  }
 
   .card-grid {
     grid-template-columns: 1fr;
@@ -42,6 +79,18 @@
   }
 
   .card {
-    width: 80%;
+    width: 96%;
+  }
+
+  .mini-card {
+    width: 100%;
+  }
+
+  .mini-card__img-container, .event__img-container {
+    width: 16%;
+  }
+
+  .video-container {
+    grid-template-columns: 1fr;
   }
 }
