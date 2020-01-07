@@ -2,6 +2,11 @@ body {
   background-color: $light-1;
 }
 
+::selection {
+  color: #fff;
+  background-color: rgba($dark-2, 1);
+}
+
 #app {
   margin-left: 1.25rem;
   margin-right: 1.25rem;

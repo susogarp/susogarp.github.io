@@ -68,6 +68,11 @@ body {
   background-color: #f8f8f8;
 }
 
+::selection {
+  color: #fff;
+  background-color: #4c4c4c;
+}
+
 #app {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
