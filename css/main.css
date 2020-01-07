@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #212121;
+  transition: 0.5s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: #212121;
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: #212121;
+  font-size: 1.125rem;
+  font-weight: normal;
+  padding: 0.625rem 0;
+}
+
+h3 {
+  color: #212121;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+header p {
+  color: #4c4c4c;
+  margin-bottom: 1.25rem;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+#app {
+  margin: 0 1.25rem;
+}
+
+header {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin: 2rem 0;
+}
+
+.block {
+  margin-top: 3.75rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: -1.5rem;
+}
+.skills figure {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 1.5rem;
+}
+.skills figure figcaption {
+  padding-top: 0.625rem;
+  color: #212121;
+  font-weight: 600;
+}
+.skills figure i {
+  font-size: 4rem;
+  color: #4c4c4c;
+}
+
+.project__paragraph {
+  margin-bottom: 1.25rem;
+  color: #4c4c4c;
+}
+
+.project__img {
+  height: 8.25rem;
+  background-image: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0.625rem 0;
+}
+
+.project__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project__footer i {
+  font-size: 2rem;
+  color: #4c4c4c;
+  margin-right: 0.5rem;
+}
+
+.project__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.project__buttons a:first-of-type {
+  margin-bottom: 0.625rem;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+  margin-bottom: 2rem;
+}
+.contact > * {
+  margin: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #212121;
+  font-family: "Signika";
+  text-align: center;
+  transition: 0.1s;
+}
+.btn:hover {
+  transform: translate(0, -0.1rem);
+  background-color: #212121;
+  color: #f8f8f8;
+}
+
+.btn--normal {
+  padding: 0.75rem 1.375rem;
+}
+
+.btn--small {
+  padding: 0.5rem 1.125rem;
+}
+
+.btn--hightlight {
+  background-color: #212121;
+  color: #f8f8f8;
+}
+.btn--hightlight:hover {
+  background-color: #4c4c4c;
+  border: 1px solid #4c4c4c;
+}
+
+.btn--header {
+  margin-right: 1.25rem;
+}
+
+.nav {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  width: 3.25rem;
+  padding: 1.25rem 0;
+}
+
+.nav--mobile {
+  background-color: #f8f8f8;
+  position: absolute;
+  display: flex !important;
+  flex-direction: column;
+  left: 10rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: -0.625rem;
+  animation-name: menu-mobile-open;
+  animation-duration: 0.5s;
+}
+.nav--mobile > * {
+  display: block;
+  padding: 1rem;
+}
+
+@keyframes menu-mobile-open {
+  from {
+    transform: translate(10rem, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.nav div {
+  display: flex;
+}
+
+.nav button i {
+  color: #4c4c4c;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.nav ul li {
+  margin: 0 0.4rem;
+}
+.nav ul a {
+  padding: 0.625rem;
+  font-weight: 600;
+}
+
+.nav .nav-hide {
+  display: none;
+}
+
+.nav__menu-close {
+  display: none;
+  margin-top: 0.8rem;
+  margin-right: 0 !important;
+  font-size: 2rem;
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  #app {
+    margin: 0 2.5rem;
+  }
+
+  .nav {
+    margin-bottom: 3.75rem;
+  }
+
+  .nav .nav-hide {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__menu-btn {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .block {
+    margin-top: 5rem;
+  }
+
+  .project__buttons {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .project__buttons a:first-of-type {
+    margin-right: 1.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  #app {
+    margin: 0 3.75rem;
+  }
+
+  .nav {
+    margin-bottom: 5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .project-container {
+    display: flex;
+  }
+  .project-container > div:first-of-type {
+    margin-right: 2.5rem;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

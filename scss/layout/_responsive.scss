@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+  #app {
+    margin: 0 2.5rem;
+  }
+
+  .nav {
+    margin-bottom: 3.75rem;
+  }
+
+  .nav .nav-hide {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__menu-btn {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .block {
+    margin-top: 5rem;
+  }
+
+  .project__buttons {
+    flex-direction: row;
+    align-items: flex-start;
+
+    & a:first-of-type {
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #app {
+    margin: 0 3.75rem;
+  }
+
+  .nav {
+    margin-bottom: 5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .project-container {
+    display: flex;
+
+    & > div:first-of-type {
+      margin-right: 2.5rem;
+    }
+  }
+
+  hr {
+    display: none;
+  }
+}

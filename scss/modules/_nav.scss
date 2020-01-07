@@ -1,0 +1,78 @@
+.nav {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 3.25rem;
+    padding: 1.25rem 0;
+  }
+}
+
+.nav--mobile {
+  background-color: $light-1;
+  position: absolute;
+  display: flex !important;
+  flex-direction: column;
+  left: 10rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: -0.625rem;
+
+  animation-name: menu-mobile-open;
+  animation-duration: 0.5s;
+
+  & > * {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@keyframes menu-mobile-open {
+  from {
+    transform: translate(10rem, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.nav div {
+  display: flex;
+}
+
+// .nav button:first-of-type {
+//   margin-right: 2rem;
+// }
+
+.nav button i {
+  color: $dark-2;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  & li {
+    margin: 0 0.4rem;
+  }
+
+  & a {
+    padding: 0.625rem;
+    font-weight: 600;
+  }
+}
+
+.nav .nav-hide {
+  display: none;
+}
+
+.nav__menu-close {
+  display: none;
+  margin-top: 0.8rem;
+  margin-right: 0 !important;
+  font-size: 2rem;
+  align-self: flex-end;
+}

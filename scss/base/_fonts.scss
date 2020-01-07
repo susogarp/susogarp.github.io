@@ -1,0 +1,40 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: $dark-1;
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: $dark-1;
+  font-size: 1.125rem;
+  font-weight: normal;
+  padding: 0.625rem 0;
+}
+
+h3 {
+  color: $dark-1;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+header p {
+  color: $dark-2;
+  margin-bottom: 1.25rem;
+}
