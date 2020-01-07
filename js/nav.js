@@ -14,3 +14,15 @@ navClose.addEventListener('click', () => {
   navClose.style.display = 'none';
   page.style.backgroundColor = 'rgba(255,255,255,1)';
 });
+
+// Smooth nav
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
