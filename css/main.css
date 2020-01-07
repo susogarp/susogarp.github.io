@@ -120,6 +120,10 @@ hr {
 .project__img--vlade {
   background-image: url("https://i.imgur.com/BwqRnHD.png");
 }
+.project__img--lumins {
+  background-image: url("https://i.imgur.com/15cCWQw.png");
+  background-position: center;
+}
 
 .project__footer {
   display: flex;
