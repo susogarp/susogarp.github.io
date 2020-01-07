@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 1.25rem;
   color: #212121;
   transition: 0.5s;
 }
@@ -66,10 +66,6 @@ header p {
 
 body {
   background-color: #f8f8f8;
-}
-
-#app {
-  margin: 0 1.25rem;
 }
 
 header {
