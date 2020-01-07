@@ -117,6 +117,9 @@ hr {
   background-repeat: no-repeat;
   margin: 0.625rem 0;
 }
+.project__img--vlade {
+  background-image: url("https://i.imgur.com/BwqRnHD.png");
+}
 
 .project__footer {
   display: flex;
