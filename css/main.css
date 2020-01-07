@@ -261,6 +261,10 @@ button:nth-child(2) {
 .nav ul a {
   padding: 0.625rem;
   font-weight: 600;
+  transition: 0.2s;
+}
+.nav ul a:hover {
+  color: #4c4c4c;
 }
 
 .nav .nav-hide {
