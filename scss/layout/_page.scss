@@ -2,6 +2,11 @@ body {
   background-color: $light-1;
 }
 
+#app {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 header {
   text-align: center;
 }
@@ -21,13 +26,13 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: -1.5rem;
+  margin: -1.25rem;
 
   & figure {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 1.5rem;
+    margin: 1.25rem;
 
     & figcaption {
       padding-top: 0.625rem;
