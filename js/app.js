@@ -19,7 +19,7 @@ navToggle.addEventListener('click', () => {
 
 navClose.addEventListener('click', closeNavMobile);
 
-for (let i = 0; nav.querySelectorAll('a').length; i++) {
+for (let i = 0; i < nav.querySelectorAll('a').length; i++) {
   nav.querySelectorAll('a')[i].addEventListener('click', closeNavMobile);
 }
 
