@@ -259,6 +259,7 @@ button:nth-child(2) {
 
 .nav button i {
   color: #4c4c4c;
+  padding: 0.625rem;
 }
 
 .nav button span {
@@ -306,7 +307,6 @@ button:nth-child(2) {
   .nav button span {
     display: inline;
     font-size: 1rem;
-    margin-left: 0.625rem;
   }
 
   .nav .nav-hide {
