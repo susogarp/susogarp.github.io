@@ -5,17 +5,23 @@ const nav = document.querySelector('.nav__menu');
 const navToggle = document.querySelector('.nav__menu-btn');
 const navClose = document.querySelector('.nav__menu-close');
 
+function closeNavMobile() {
+  nav.classList.remove('nav--mobile');
+  navClose.style.display = 'none';
+  page.classList.remove('body-shadow');
+}
+
 navToggle.addEventListener('click', () => {
   nav.classList.add('nav--mobile');
   navClose.style.display = 'block';
   page.classList.add('body-shadow');
 });
 
-navClose.addEventListener('click', () => {
-  nav.classList.remove('nav--mobile');
-  navClose.style.display = 'none';
-  page.classList.remove('body-shadow');
-});
+navClose.addEventListener('click', closeNavMobile);
+
+for (let i = 0; nav.querySelectorAll('a').length; i++) {
+  nav.querySelectorAll('a')[i].addEventListener('click', closeNavMobile);
+}
 
 // Smooth nav
 
