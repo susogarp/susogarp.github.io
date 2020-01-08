@@ -42,12 +42,16 @@
   display: flex;
 }
 
-// .nav button:first-of-type {
-//   margin-right: 2rem;
-// }
+.nav button:first-of-type {
+  margin-right: 2rem;
+}
 
 .nav button i {
   color: $dark-2;
+}
+
+.nav button span {
+  display: none;
 }
 
 .nav ul {

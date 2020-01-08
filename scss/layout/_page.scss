@@ -2,6 +2,10 @@ body {
   background-color: $light-1;
 }
 
+.body-shadow {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 ::selection {
   color: #fff;
   background-color: rgba($dark-2, 1);
@@ -41,7 +45,6 @@ hr {
 
     & figcaption {
       padding-top: 0.625rem;
-      color: $dark-1;
       font-weight: 600;
     }
   }
@@ -54,7 +57,6 @@ hr {
 
 .project__paragraph {
   margin-bottom: 1.25rem;
-  color: $dark-2;
 }
 
 .project__img {

@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  color: #212121;
+  color: #4c4c4c;
   transition: 0.5s;
 }
 
@@ -56,16 +56,20 @@ h3 {
 }
 
 h4 {
+  color: #212121;
   font-weight: 600;
 }
 
 header p {
-  color: #4c4c4c;
   margin-bottom: 1.25rem;
 }
 
 body {
   background-color: #f8f8f8;
+}
+
+.body-shadow {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 ::selection {
@@ -107,7 +111,6 @@ hr {
 }
 .skills figure figcaption {
   padding-top: 0.625rem;
-  color: #212121;
   font-weight: 600;
 }
 .skills figure i {
@@ -117,7 +120,6 @@ hr {
 
 .project__paragraph {
   margin-bottom: 1.25rem;
-  color: #4c4c4c;
 }
 
 .project__img {
@@ -251,8 +253,16 @@ button:nth-child(2) {
   display: flex;
 }
 
+.nav button:first-of-type {
+  margin-right: 2rem;
+}
+
 .nav button i {
   color: #4c4c4c;
+}
+
+.nav button span {
+  display: none;
 }
 
 .nav ul {
@@ -293,6 +303,12 @@ button:nth-child(2) {
     margin-bottom: 3.75rem;
   }
 
+  .nav button span {
+    display: inline;
+    font-size: 1rem;
+    margin-left: 0.625rem;
+  }
+
   .nav .nav-hide {
     display: flex;
     align-items: center;
@@ -316,6 +332,10 @@ button:nth-child(2) {
   }
   .project__buttons a:first-of-type {
     margin-right: 1.25rem;
+  }
+
+  .dark-mobile {
+    background-color: transparent !important;
   }
 }
 @media (min-width: 1280px) {
@@ -341,6 +361,42 @@ button:nth-child(2) {
   hr {
     display: none;
   }
+}
+.dark-mode {
+  background-color: #212121;
+  color: #d3d3d3;
+}
+
+.dark-icon {
+  color: #d3d3d3 !important;
+}
+
+.dark-mobile {
+  background-color: #4c4c4c;
+}
+
+.dark-h1 {
+  color: #f8f8f8;
+}
+
+.dark-h2,
+.dark-h3,
+.dark-h4,
+.dark-link {
+  color: #d3d3d3;
+}
+
+.dark-btn {
+  border: 1px solid #d3d3d3;
+  color: #d3d3d3;
+}
+.dark-btn:hover {
+  background-color: #4c4c4c;
+}
+
+.dark-btn--hightlight {
+  background-color: #d3d3d3;
+  color: #212121;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,12 @@
     margin-bottom: 3.75rem;
   }
 
+  .nav button span {
+    display: inline;
+    font-size: 1rem;
+    margin-left: 0.625rem;
+  }
+
   .nav .nav-hide {
     display: flex;
     align-items: center;
@@ -31,6 +37,10 @@
     & a:first-of-type {
       margin-right: 1.25rem;
     }
+  }
+
+  .dark-mobile {
+    background-color: transparent !important;
   }
 }
 
