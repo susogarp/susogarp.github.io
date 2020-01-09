@@ -61,11 +61,11 @@ darkBtn.addEventListener('click', () => {
     darkBtn.children[1].textContent = 'Dark mode';
 
     // Elements alone
-    darkBtn.classList.remove('dark-link');
+    darkBtn.classList.remove('dark-text');
     page.classList.remove('dark-mode');
     logo.setAttribute('src', 'img/logo.svg');
     h1.classList.remove('dark-h1');
-    h2.classList.remove('dark-h2');
+    h2.classList.remove('dark-text');
     nav.classList.remove('dark-mobile');
     navClose.classList.remove('dark-icon');
 
@@ -76,17 +76,17 @@ darkBtn.addEventListener('click', () => {
 
     // All nav links
     for (let i = 0; i < navLinks.length; i++) {
-      navLinks[i].classList.remove('dark-link');
+      navLinks[i].classList.remove('dark-text');
     }
 
     // All H3
     for (let i = 0; i < h3.length; i++) {
-      h3[i].classList.remove('dark-h3');
+      h3[i].classList.remove('dark-text');
     }
 
     // All H4
     for (let i = 0; i < h4.length; i++) {
-      h4[i].classList.remove('dark-h4');
+      h4[i].classList.remove('dark-text');
     }
 
     // All buttons with btn
@@ -105,11 +105,11 @@ darkBtn.addEventListener('click', () => {
     darkBtn.children[1].textContent = 'Light mode';
 
     // Elements alone
-    darkBtn.classList.add('dark-link');
+    darkBtn.classList.add('dark-text');
     page.classList.add('dark-mode');
     logo.setAttribute('src', 'img/logo-alt.svg');
     h1.classList.add('dark-h1');
-    h2.classList.add('dark-h2');
+    h2.classList.add('dark-text');
     nav.classList.add('dark-mobile');
     navClose.classList.add('dark-icon');
 
@@ -120,17 +120,17 @@ darkBtn.addEventListener('click', () => {
 
     // All nav links
     for (let i = 0; i < navLinks.length; i++) {
-      navLinks[i].classList.add('dark-link');
+      navLinks[i].classList.add('dark-text');
     }
 
     // All H3
     for (let i = 0; i < h3.length; i++) {
-      h3[i].classList.add('dark-h3');
+      h3[i].classList.add('dark-text');
     }
 
     // All H4
     for (let i = 0; i < h4.length; i++) {
-      h4[i].classList.add('dark-h4');
+      h4[i].classList.add('dark-text');
     }
 
     // All buttons with btn

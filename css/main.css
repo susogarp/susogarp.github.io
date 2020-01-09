@@ -379,10 +379,7 @@ button:nth-child(2) {
   color: #f8f8f8;
 }
 
-.dark-h2,
-.dark-h3,
-.dark-h4,
-.dark-link {
+.dark-text {
   color: #d3d3d3;
 }
 
