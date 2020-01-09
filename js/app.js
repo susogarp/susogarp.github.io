@@ -57,8 +57,8 @@ darkBtn.addEventListener('click', () => {
   if (isDarkMode) {
     isDarkMode = false;
     // Change icon for moon and text
-    darkBtn.children[0].classList.replace('fa-sun', 'fa-moon');
-    darkBtn.children[1].textContent = 'Dark mode';
+    darkBtn.querySelector('i').classList.replace('fa-sun', 'fa-moon');
+    darkBtn.querySelector('span').textContent = 'Dark mode';
 
     // Elements alone
     darkBtn.classList.remove('dark-text');
@@ -101,8 +101,8 @@ darkBtn.addEventListener('click', () => {
   } else {
     isDarkMode = true;
     // Change icon for sun
-    darkBtn.children[0].classList.replace('fa-moon', 'fa-sun');
-    darkBtn.children[1].textContent = 'Light mode';
+    darkBtn.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+    darkBtn.querySelector('span').textContent = 'Light mode';
 
     // Elements alone
     darkBtn.classList.add('dark-text');
