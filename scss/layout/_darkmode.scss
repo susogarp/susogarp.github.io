@@ -29,6 +29,12 @@
 }
 
 .dark-btn--hightlight {
-  background-color: $light-2;
-  color: $dark-1;
+  background-color: $dark-2;
+  color: $light-1;
+  border: 1px solid $dark-2;
+
+  &:hover {
+    background-color: $light-2;
+    color: $dark-1;
+  }
 }

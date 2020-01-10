@@ -392,6 +392,11 @@ button:nth-child(2) {
 }
 
 .dark-btn--hightlight {
+  background-color: #4c4c4c;
+  color: #f8f8f8;
+  border: 1px solid #4c4c4c;
+}
+.dark-btn--hightlight:hover {
   background-color: #d3d3d3;
   color: #212121;
 }
