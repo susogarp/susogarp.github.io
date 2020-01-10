@@ -364,11 +364,11 @@ button:nth-child(2) {
 }
 .dark-mode {
   background-color: #212121;
-  color: #d3d3d3;
+  color: rgba(211, 211, 211, 0.7);
 }
 
 .dark-icon {
-  color: #d3d3d3 !important;
+  color: rgba(211, 211, 211, 0.7) !important;
 }
 
 .dark-mobile {
@@ -376,7 +376,7 @@ button:nth-child(2) {
 }
 
 .dark-h1 {
-  color: #f8f8f8;
+  color: #d3d3d3;
 }
 
 .dark-text {
@@ -384,7 +384,7 @@ button:nth-child(2) {
 }
 
 .dark-btn {
-  border: 1px solid #d3d3d3;
+  border: 1px solid rgba(211, 211, 211, 0.7);
   color: #d3d3d3;
 }
 .dark-btn:hover {
@@ -393,7 +393,7 @@ button:nth-child(2) {
 
 .dark-btn--hightlight {
   background-color: #4c4c4c;
-  color: #f8f8f8;
+  color: #d3d3d3;
   border: 1px solid #4c4c4c;
 }
 .dark-btn--hightlight:hover {

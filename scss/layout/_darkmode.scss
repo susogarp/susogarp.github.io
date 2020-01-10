@@ -1,10 +1,10 @@
 .dark-mode {
   background-color: $dark-1;
-  color: $light-2;
+  color: $light-3;
 }
 
 .dark-icon {
-  color: $light-2 !important;
+  color: $light-3 !important;
 }
 
 .dark-mobile {
@@ -12,7 +12,7 @@
 }
 
 .dark-h1 {
-  color: $light-1;
+  color: $light-2;
 }
 
 .dark-text {
@@ -20,7 +20,7 @@
 }
 
 .dark-btn {
-  border: 1px solid $light-2;
+  border: 1px solid $light-3;
   color: $light-2;
 
   &:hover {
@@ -30,7 +30,7 @@
 
 .dark-btn--hightlight {
   background-color: $dark-2;
-  color: $light-1;
+  color: $light-2;
   border: 1px solid $dark-2;
 
   &:hover {
