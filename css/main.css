@@ -6,6 +6,7 @@ body {
   margin: 0;
   color: #4c4c4c;
   transition: 0.5s;
+  overflow: hidden;
 }
 
 img {
@@ -223,32 +224,6 @@ button:nth-child(2) {
   padding: 1.25rem 0;
 }
 
-.nav--mobile {
-  background-color: #f8f8f8;
-  position: absolute;
-  display: flex !important;
-  flex-direction: column;
-  left: 10rem;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin-top: -0.625rem;
-  animation-name: menu-mobile-open;
-  animation-duration: 0.5s;
-}
-.nav--mobile > * {
-  display: block;
-  padding: 1rem;
-}
-
-@keyframes menu-mobile-open {
-  from {
-    transform: translate(10rem, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
 .nav div {
   display: flex;
 }
@@ -287,6 +262,32 @@ button:nth-child(2) {
   display: none;
 }
 
+.nav--mobile {
+  background-color: #f8f8f8;
+  position: absolute;
+  display: flex !important;
+  flex-direction: column;
+  width: 200px;
+  height: 110%;
+  right: 0;
+  margin-top: -0.625rem;
+  animation-name: menu-mobile-open;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+.nav--mobile > * {
+  display: block;
+  padding: 1rem;
+}
+
+@keyframes menu-mobile-open {
+  from {
+    transform: translate(120%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
 .nav__menu-close {
   display: none;
   margin-top: 0.8rem;
