@@ -16,7 +16,7 @@ button:nth-child(2) {
   border: 1px solid $dark-1;
   font-family: 'Signika';
   text-align: center;
-  transition: 0.1s;
+  transition: 0.1s background-color;
 
   &:hover {
     transform: translate(0, -0.1rem);

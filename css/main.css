@@ -5,7 +5,7 @@
 body {
   margin: 0;
   color: #4c4c4c;
-  transition: 0.5s;
+  transition: 0.5s background-color;
 }
 
 img {
@@ -184,7 +184,7 @@ button:nth-child(2) {
   border: 1px solid #212121;
   font-family: "Signika";
   text-align: center;
-  transition: 0.1s;
+  transition: 0.1s background-color;
 }
 .btn:hover {
   transform: translate(0, -0.1rem);
