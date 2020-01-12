@@ -9,6 +9,10 @@
 
 .dark-mobile {
   background-color: $dark-2;
+
+  & a:hover {
+    color: $light-1 !important;
+  }
 }
 
 .dark-h1 {

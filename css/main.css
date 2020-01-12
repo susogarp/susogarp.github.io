@@ -374,6 +374,9 @@ button:nth-child(2) {
 .dark-mobile {
   background-color: #4c4c4c;
 }
+.dark-mobile a:hover {
+  color: #f8f8f8 !important;
+}
 
 .dark-h1 {
   color: #d3d3d3;
