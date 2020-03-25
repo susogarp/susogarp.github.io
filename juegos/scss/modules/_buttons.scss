@@ -1,0 +1,79 @@
+.btn {
+  cursor: pointer;
+  font-family: 'Sarabun';
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: rgba($white, 0);
+  color: rgba($white, .7);
+  transition: .3s;
+
+  &__content {
+    transform: skew(18deg);
+    display: flex;
+    align-items: end;
+  }
+
+  &__icon {
+    padding-left: 0.75rem;
+  }
+}
+
+.btn--primary {
+  background-color: $color_primary;
+}
+
+.btn--secondary {
+  background-color: $color_highlight;
+}
+
+.btn--skew {
+  border: 2px solid $color_primary;
+  transform: skew(-18deg);
+  align-self: center;
+
+  &:hover, &:focus {
+    background-color: $color_primary;
+    color: rgba($white, 1);
+  }
+}
+
+.search-bar__button {
+    padding: 0 1.5rem;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    &:hover, &:focus {
+      background-color: $color_primary;
+      color: rgba($white, 1);
+    }
+  }
+
+.btn--block {
+  border-radius: 0px 0px 6px 6px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+
+  &:hover, &:focus {
+    background-color: $color_primary;
+    color: rgba($white, 1);
+  }
+}
+
+.btn--newsletter {
+  border: 2px solid $color_primary;
+  padding: 1rem 3rem;
+  color: $white;
+  font-weight: 700;
+}
+
+.btn--md {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.btn--lg {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-weight: 700;
+}
