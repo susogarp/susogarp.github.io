@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  color: #212121;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 260px;
+  height: auto;
+}
+
+.nav__menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.nav__menu li {
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 32px;
+}
+
+.nav__link--last {
+  padding-right: 0;
+}
+
+.game-container {
+  margin-top: 16px;
+  margin-bottom: 110px;
+}
+
+.game-window {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+#game {
+  height: 0;
+  width: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.game__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game__title {
+  margin: 0;
+}
+
+.game__share {
+  text-decoration: none;
+  padding: 16px;
+  border: 1px solid #212121;
+}
+
+.levels-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.level {
+  position: relative;
+}
+
+.level__img {
+  width: 265px;
+  height: auto;
+}
+
+.level__title {
+  position: absolute;
+  margin: 0;
+  bottom: 16px;
+  left: 16px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #212121;
+  padding: 32px 0;
+  margin-top: 90px;
+  text-align: center;
+  color: #fff;
+}
