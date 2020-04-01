@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/da5aef46e5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../css/index.css">
   <title>PlaySuperJump</title>
 </head>
@@ -16,7 +17,14 @@
 
       <ul class="nav__menu">
         <li><a class="nav__link" href="#0">Home</a></li>
-        <li><a class="nav__link" href="#0">Levels</a></li>
+        <li><a class="nav__link" href="#0">Levels <i class="fas fa-caret-down"></i></a>
+          <ul class="nav__hover-menu nav-invisible">
+            <li><a href="#0">Level2</a></li>
+            <li><a href="#0">Level3</a></li>
+            <li><a href="#0">Level4</a></li>
+            <li><a href="#0">Level5</a></li>
+          </ul>
+        </li>
         <li><a class="nav__link nav__link--last" href="#0">Contact</a></li>
       </ul>
     </nav>
@@ -27,8 +35,14 @@
       </div>
 
       <div class="game__data">
-        <h1 class="game__title">Level 1</h1>
-        <a class="game__share" href="#0">Share</a>
+        <div>
+          <h1 class="game__title">Level 1</h1>
+          <a class="game__share" href="#0">Share</a>
+        </div>
+        <p class="game__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fuga? Explicabo
+          magni debitis veritatis ipsa accusantium cumque vero quos animi esse eum. Voluptatem nobis iusto officiis quas
+          quae aliquid obcaecati.</p>
+
       </div>
     </div>
 
@@ -53,8 +67,10 @@
   </div>
 
   <footer class="footer">
-    &copy; PlaySuperJump.com
+    <a class="footer__link" href="#0">&copy; PlaySuperJump.com</a>
   </footer>
+
+  <script src="../../js/index.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,15 @@ body {
   color: #212121;
 }
 
+a {
+  text-decoration: none;
+  transition: all ease-in-out .2s;
+}
+
+a:hover {
+  color: gray;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,8 +44,11 @@ body {
   list-style: none;
 }
 
+.nav__menu li:nth-child(2) {
+  position: relative;
+}
+
 .nav__link {
-  text-decoration: none;
   color: #212121;
   font-size: 16px;
   font-weight: 700;
@@ -46,6 +58,34 @@ body {
 
 .nav__link--last {
   padding-right: 0;
+}
+
+.nav__hover-menu {
+  position: absolute;
+  top: 30px;
+  background-color: #212121;
+  padding: 16px 20px;
+}
+
+.nav__hover-menu li {
+  margin: 3px 0;
+}
+
+.nav__hover-menu a {
+  color: #fff;
+}
+
+.nav__hover-menu a:hover {
+  color: gray;
+}
+
+.nav-invisible {
+  display: none;
+}
+
+.nav-visible {
+  display: flex;
+  flex-direction: column;
 }
 
 .game-container {
@@ -72,6 +112,13 @@ body {
 
 .game__data {
   display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.game__data > div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -81,10 +128,20 @@ body {
 }
 
 .game__share {
-  text-decoration: none;
   padding: 16px;
   color: #212121;
   border: 1px solid #212121;
+}
+
+.game__share:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+.game__description {
+  margin: 0;
+  margin-top: 10px;
+  text-align: justify;
 }
 
 .levels-container {
@@ -94,6 +151,10 @@ body {
 
 .level {
   position: relative;
+}
+
+.level:hover .level__title {
+  color: #212121;
 }
 
 .level__img {
@@ -109,6 +170,7 @@ body {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
+  transition: color ease-in-out .2s;
 }
 
 .footer {
@@ -116,5 +178,9 @@ body {
   padding: 32px 0;
   margin-top: 90px;
   text-align: center;
+  color: #fff;
+}
+
+.footer__link {
   color: #fff;
 }
