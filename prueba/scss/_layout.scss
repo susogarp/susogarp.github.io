@@ -1,0 +1,138 @@
+.outer-container {
+   max-width: 1300px;
+   width: 96%;
+   margin: 0 auto;
+}
+
+.container {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.nav {
+   display: flex;
+
+   &__links {
+      display: flex;
+   }
+}
+
+.nav--user {
+   justify-content: space-between;
+}
+
+.nav--main {
+   // justify-content: space-between;
+
+   & div.outer-container {
+      display: flex;
+      justify-content: space-between;
+
+      & div {
+         display: flex;
+         align-items: center;
+      }
+   }
+}
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   &__logos-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & div {
+         align-self: flex-end;
+      }
+   }
+}
+
+.features {
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         max-width: 240px;
+
+      }
+   }
+}
+
+.promos {
+   display: flex;
+
+   &__promo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+.featured-pc {
+   display: flex;
+   align-items: center;
+}
+
+.refurbished {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.reviews {
+   
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+
+.footer-menu {
+   
+   & > div {
+      display: flex;
+      justify-content: space-between;      
+   }
+}
+
+.footer {
+
+   &__newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+.nav--footer {
+   justify-content: space-between;
+
+   & div, & .nav__links {
+      display: flex;
+      align-items: flex-end;
+   }
+}

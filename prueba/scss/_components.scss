@@ -1,0 +1,284 @@
+@import 'nav';
+
+.logo {
+   width: 70px;
+}
+
+.btn {
+   display: inline-block;
+   font-weight: 400;
+   border-radius: 4px;
+   border: none;
+   padding: 1rem 3rem;
+   background-color: transparent;
+   color: $white;
+   cursor: pointer;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+   font-size: 1rem;
+
+   &--border {
+      border: 2px solid $white;
+      padding: .7rem 2.2rem;
+      transition: background-color, color 0.2s ease-in-out;
+
+      &:hover {
+         background-color: $white;
+         color: $primary;
+      }
+   }
+
+   &--primary {
+      background-color: $primary;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+         box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4);
+         transform: translate(0, -2px);
+      }
+   }
+
+   &--alt {
+      color: rgba(0,0,0,.8);
+      background-color: $white;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+         box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4);
+         transform: translate(0, -2px);
+      }
+   }
+
+   &--small {
+      padding: 0;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+.header {
+   background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,.7)), url('../img/bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 700px;
+   color: $white;
+
+   &__container {
+      width: 500px;
+      margin-left: 3rem;
+   }
+
+   &__container .logo:first-child {
+      width: 280px;
+   }
+
+   &__logos-container {
+      margin-bottom: 3rem;
+      width: auto;
+   }
+
+   &__title {
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+      margin-bottom: .8rem;
+   }
+
+   &__text {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+   }
+}
+
+.features {
+   background: linear-gradient(330deg, rgba(70,70,70,1) 0%, rgba(116,116,116,1) 100%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: $white;
+   padding: 3.5rem 0;
+
+   &__img {
+      height: 60px;
+      margin-bottom: 1.5rem;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   &__text {
+      text-align: center;
+      margin: 1rem 0;
+   }
+}
+
+.promos {
+
+   &__promo {
+      width: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      height: 320px;
+   }
+
+   &__promo:first-child {
+      background: linear-gradient(0deg, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/ninja.jpg');
+      background-repeat: no-repeat;
+      // background-size: cover;
+      background-position: 40% 30%;
+   }
+
+   &__promo:last-child {
+      background-image: url('../img/Group\ 9.jpg');
+   }
+
+   &__title {
+      color: $white;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      margin-top: 2rem;
+   }
+
+   &__img {
+      margin-top: 2rem;
+   }
+}
+
+.featured-pc {
+   height: 650px;
+   color: rgba(0,0,0,.7);
+
+   &__container {
+      width: 60%;
+      margin-right: 5rem;
+   }
+
+   &__title {
+      font-size: 2.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+   }
+
+   &__text {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
+      line-height: 1.5;
+   }
+}
+
+.refurbished {
+   background-color: $primary;
+
+   &__title {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+   }
+
+   & .btn {
+      margin-bottom: 2.5rem;
+   }
+}
+
+.reviews {
+   background-color: $black1;
+   color: $white;
+   
+   &__container {
+      height: 380px;
+
+      & div {
+         width: 22%;
+      }
+   }
+
+   &__text {
+      text-align: center;
+      line-height: 1.5;
+      margin-top: 2rem;
+   }
+}
+
+.footer-menu {
+   background-color: $black2;
+
+   & > div {
+      padding-bottom: 3rem;
+   }
+
+   &__container ul li {
+      margin-bottom: .5rem;
+
+      & a {
+         color: $purple;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   &__container:nth-child(5) ul li a {
+      color: $blue;
+   }
+
+   &__container:nth-child(6) ul li a {
+      color: $cyan;
+   }
+
+   &__title {
+      color: $white;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-top: 3rem;
+      margin-bottom: .6rem;
+   }
+}
+
+.footer {
+   background-color: $black1;
+
+   &__newsletter {
+      height: 200px;
+      margin-bottom: 4rem;
+   }
+
+   &__title {
+      color: rgba(255,255,255,.5);
+      font-size: 2.2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1rem;
+      margin-bottom: 1rem;
+
+      & span {
+         color: $white;
+      }
+   }
+
+   &__input {
+      border: none;
+      background-color: rgba(255,255,255,.2);
+      color: rgba(255,255,255,.5);
+      font-size: 1.2rem;
+      border-radius: 8px;
+      width: 50%;
+      padding: 0.5rem 2rem;
+      text-align: center;
+   }
+}

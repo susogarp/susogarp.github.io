@@ -1,0 +1,261 @@
+@media (max-width: 1280px) {
+   .container {
+      width: 94%;
+   }
+
+   .nav--footer .nav__links--footer li a {
+      margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+   .container {
+      width: 96%;
+   }
+
+   .nav--main {
+      & .nav__links li a {
+         padding: 0 .5rem;
+      }
+
+      & .btn--border {
+         padding: 0.5rem 1.5rem;
+      }
+   }
+   .nav--footer {
+      flex-direction: column;
+      align-items: center;
+
+      & > div {
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 1.5rem;
+      }
+
+      & .nav__links--footer {
+         margin-bottom: 1.5rem;
+      }
+   }
+
+   .features__container {
+      justify-content: space-evenly;
+
+      & > div:last-child {
+         margin-top: 2rem;
+      }
+  }
+
+   .reviews__container {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      height: auto;
+      padding: 2rem 0;
+
+      & > div {
+         width: 40%;
+      }
+  }
+
+  .footer-menu {
+     & > div {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+     }
+
+     &__container {
+        margin-right: 2rem;
+
+        &:last-child {
+           margin-right: 0;
+        }
+     }
+  }
+
+  .footer {
+   &__newsletter {
+      margin-bottom: 2rem;
+   }
+}
+}
+
+@media (max-width: 768px) {
+
+   // Nav responsive
+   .nav--main {
+
+      & .nav__links, a.btn--border {
+         display: none;
+      }
+
+      & #nav-toggle {
+         display: block;
+      }
+   }
+
+   .nav--mobile {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      background-color: $primary;
+      width: 100%;
+      left: 0;
+      top: 108px;
+      bottom: 0;
+      z-index: 10;
+      
+      & li {
+         margin-top: 2rem;
+      }
+   }
+
+   .header {
+      flex-direction: column;
+
+      &__container {
+         margin-left: 0;
+         margin-top: 3rem;
+         align-items: center;
+         margin-bottom: 2rem;
+         width: 90%;
+      }
+
+      &__logos-container {
+         margin-bottom: 2rem;
+
+         & .logo:first-child {
+            width: 180px;
+         }
+      }
+
+      &__title {
+         font-size: 2rem;
+         letter-spacing: normal;
+      }
+
+      &__text {
+         font-size: 1rem;
+         margin-bottom: 1rem;
+      }
+
+      & > img {
+         order: 2;
+      }
+   }
+   
+   .features__container {
+
+      // & > div:nth-child(3), & > div:last-child {
+      //    margin-top: 2rem;
+      // }
+
+      & > div {
+         margin-right: 0;
+         max-width: 40%;
+         margin-bottom: 2rem;
+      }
+  }
+
+  .promos {
+     flex-direction: column;
+
+     &__promo {
+        width: auto;
+        height: 260px;
+     }
+
+     &__img {
+        width: 50%;
+     }
+  }
+
+  .featured-pc {
+     flex-direction: column;
+     margin-top: 3rem;
+     height: auto;
+
+     &__container {
+        margin-right: 0;
+        margin-bottom: 3rem;
+        width: 90%;
+     }
+
+     &__title {
+        font-size: 2rem;
+        letter-spacing: normal;
+     }
+
+     &__text {
+        margin-bottom: 2rem;
+     }
+
+     & > img {
+        width: 50%;
+     }
+  }
+
+  .refurbished {
+     &__title {
+        width: 80%;
+        text-align: center;
+     }
+  }
+
+  .footer {
+     &__input {
+        width: 80%;
+     }
+  }
+}
+
+@media (max-width: 411px) {
+   .features__container {
+
+      & > div {
+         max-width: 90%;
+      }
+  }
+
+  .promos {
+
+      &__img {
+         width: 70%;
+      }
+   }
+
+   .reviews__container {
+      & > div {
+         width: 80%;
+         margin-bottom: 1rem;
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+  }
+
+  .footer-menu {
+     & > div {
+        width: 90%;
+        justify-content: space-between;
+     }
+
+     &__container {
+        width: 50%;
+        margin-right: 0;
+     }
+  }
+}
+
+@media (max-width: 375px) {
+   .btn {
+      padding: 0.8rem 1.5rem;
+   }
+   
+   .nav--user {
+      & .nav__links {
+         display: none;
+      }
+   }
+   
+}
