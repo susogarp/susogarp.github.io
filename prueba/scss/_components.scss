@@ -62,8 +62,10 @@
    background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,.7)), url('../img/bg.png');
    background-repeat: no-repeat;
    background-size: cover;
-   height: 700px;
+   background-clip: padding-box;
+   // height: 700px;
    color: $white;
+   padding: 4rem 0;
 
    &__container {
       width: 500px;
@@ -152,8 +154,9 @@
 }
 
 .featured-pc {
-   height: 650px;
+   // height: 650px;
    color: rgba(0,0,0,.7);
+   padding: 5rem 0;
 
    &__container {
       width: 60%;
@@ -198,7 +201,8 @@
    color: $white;
    
    &__container {
-      height: 380px;
+      // height: 380px;
+      padding: 5rem 0;
 
       & div {
          width: 22%;

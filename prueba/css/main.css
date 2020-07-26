@@ -155,8 +155,9 @@ a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  background-clip: padding-box;
   color: #fff;
+  padding: 4rem 0;
 }
 .header__container {
   width: 500px;
@@ -229,8 +230,8 @@ a {
 }
 
 .featured-pc {
-  height: 650px;
   color: rgba(0, 0, 0, 0.7);
+  padding: 5rem 0;
 }
 .featured-pc__container {
   width: 60%;
@@ -270,7 +271,7 @@ a {
   color: #fff;
 }
 .reviews__container {
-  height: 380px;
+  padding: 5rem 0;
 }
 .reviews__container div {
   width: 22%;
@@ -498,7 +499,6 @@ a {
   .reviews__container {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: auto;
     padding: 2rem 0;
   }
   .reviews__container > div {
@@ -546,12 +546,12 @@ a {
 
   .header {
     flex-direction: column;
+    padding: 1rem 0;
   }
   .header__container {
     margin-left: 0;
     margin-top: 3rem;
     align-items: center;
-    margin-bottom: 2rem;
     width: 90%;
   }
   .header__logos-container {
@@ -592,7 +592,6 @@ a {
   .featured-pc {
     flex-direction: column;
     margin-top: 3rem;
-    height: auto;
   }
   .featured-pc__container {
     margin-right: 0;
