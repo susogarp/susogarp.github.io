@@ -164,7 +164,7 @@ a {
   margin-left: 3rem;
 }
 .header__container .logo:first-child {
-  width: 280px;
+  width: 260px;
 }
 .header__logos-container {
   margin-bottom: 3rem;
@@ -488,6 +488,9 @@ a {
   .nav--footer .nav__links--footer {
     margin-bottom: 1.5rem;
   }
+  .nav--footer__copy {
+    margin-top: 0.5rem;
+  }
 
   .features__container {
     justify-content: space-evenly;
@@ -570,6 +573,7 @@ a {
   }
   .header > img {
     order: 2;
+    max-width: 50%;
   }
 
   .features__container > div {
@@ -591,7 +595,7 @@ a {
 
   .featured-pc {
     flex-direction: column;
-    margin-top: 3rem;
+    padding: 2.5rem 0;
   }
   .featured-pc__container {
     margin-right: 0;

@@ -35,6 +35,11 @@
       & .nav__links--footer {
          margin-bottom: 1.5rem;
       }
+
+      &__copy {
+         margin-top: .5rem;
+      }
+
    }
 
    .features__container {
@@ -140,6 +145,7 @@
 
       & > img {
          order: 2;
+         max-width: 50%;
       }
    }
    
@@ -171,7 +177,7 @@
 
   .featured-pc {
      flex-direction: column;
-     margin-top: 3rem;
+     padding: 2.5rem 0;
 
      &__container {
         margin-right: 0;
