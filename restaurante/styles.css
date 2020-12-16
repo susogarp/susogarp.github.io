@@ -1,0 +1,261 @@
+/* Variables */
+:root {
+  --primary-color: rgba(29, 151, 108, 1);
+  --secondary-color: rgba(33, 3, 33, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --gray-color: rgba(0, 0, 0, 0.7);
+  --red-color: rgba(246, 79, 89, 1);
+  --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  --transition: 0.2s ease-in;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Reset basico */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f4f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Helper classes */
+.icon-24 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-20 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.mr-6 {
+  margin-right: 6px;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+/* Botones */
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.btn--search {
+  background-color: transparent;
+  padding: 0.875rem;
+  font-size: 0;
+  color: rgba(0, 0, 0, 0.4);
+  transition: background-color var(--transition);
+}
+
+.btn--search:hover {
+  background-color: rgba(29, 151, 108, 0.06);
+  border-radius: 8px;
+}
+
+/* Search bar */
+.search {
+  display: flex;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  margin: 1rem 0 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.search__input {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0.875rem 1.5rem;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  color: var(--gray-color);
+}
+
+.search__input:focus {
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.16);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.search__filters {
+  display: none;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  max-width: 640px;
+  transition: box-shadow var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.24);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card__img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card__body {
+  margin: 1rem 1rem 0.625rem;
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 0.375rem;
+}
+
+.card__text {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--gray-color);
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: rgba(29, 151, 108, 0.06);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card__info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card__rating {
+  display: flex;
+  margin-right: 1.5rem;
+  color: var(--primary-color);
+}
+
+.card__status {
+  display: flex;
+  font-size: 0.875rem;
+  color: var(--primary-color);
+}
+
+.card__status--closed {
+  color: var(--red-color);
+  font-weight: 700;
+}
+
+.card__button {
+  font-size: 0;
+}
+
+/* Responsive */
+@media screen and (min-width: 808px) {
+  .search {
+    margin-top: 1.5rem;
+  }
+  #search-toggle {
+    display: none;
+  }
+
+  .search__filters {
+    display: flex;
+  }
+
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    max-width: 380px;
+  }
+}
+
+@media screen and (min-width: 1204px) {
+  .search {
+    margin-top: 3rem;
+  }
+
+  .btn--search span {
+    margin-left: 6px;
+  }
+
+  .search__filters > * {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .card-container {
+    justify-content: space-between;
+  }
+}
