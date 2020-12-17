@@ -2,6 +2,7 @@ const input = document.querySelector('.search__input');
 // const ratingButton = document.querySelectorAll('.btn--search')[0];
 const resNames = document.querySelectorAll('.card__title');
 // const resRatings = document.querySelectorAll('.card__rating');
+const resLocations = document.querySelectorAll('.card__location');
 const detailsButtons = document.querySelectorAll('.card__button');
 const modal = document.querySelector('#modal');
 const closeModalBtn = document.querySelector('#close-modal');
@@ -16,11 +17,19 @@ input.addEventListener('input', () => {
    query = input.value.toLowerCase();
 
    // Loop over the titles, if the query is not the same then is not showed
-   for(let i = 0; i < resNames.length; i++) {
+   for (let i = 0; i < resNames.length; i++) {
       if (resNames[i].textContent.toLowerCase().indexOf(query) > -1) {
          resNames[i].parentElement.parentElement.style.display = "block";
       } else {
          resNames[i].parentElement.parentElement.style.display = "none";
+      }
+   }
+
+   for (let i = 0; i < resLocations.length; i++) {
+      if (resLocations[i].textContent.toLocaleLowerCase().indexOf(query) > -1) {
+         resLocations[i].parentElement.parentElement.parentElement.style.display = "block";
+      } else {
+         resLocations[i].parentElement.parentElement.parentElement.style.display = "none";
       }
    }
 });
@@ -28,10 +37,6 @@ input.addEventListener('input', () => {
 document.querySelector('form').addEventListener('submit', (e) => {
    e.preventDefault();
 });
-
-// ratingButton.addEventListener('click', () => {
-
-// })
 
 // When arrow button is clicked of each restaurant
 for (let button of detailsButtons) {
@@ -53,6 +58,10 @@ for (let button of detailsButtons) {
       const statusCopy = button.parentElement.children[0].children[1].cloneNode(true);
       modal.children[0].children[2].children[3].children[1].remove();
       modal.children[0].children[2].children[3].append(statusCopy);
+
+      // Change modal's location
+      modal.children[0].children[2].children[5].children[1].innerText =
+      button.parentElement.parentElement.children[2].children[0].children[2].innerText;
 
       modal.style.display = 'block';
    });

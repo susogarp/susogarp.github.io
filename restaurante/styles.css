@@ -230,6 +230,10 @@ button {
   font-size: 0;
 }
 
+.card__location {
+  display: none;
+}
+
 /* Modal */
 .modal {
   display: none;
@@ -282,14 +286,14 @@ button {
   margin-right: 0;
 }
 
-.card__location {
+.modal__location {
   display: flex;
   margin-top: 1.5rem;
   font-size: 0.875rem;
   color: var(--gray-color);
 }
 
-.card__location svg {
+.modal__location svg {
   flex-shrink: 0;
 }
 
