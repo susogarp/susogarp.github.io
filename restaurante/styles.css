@@ -74,6 +74,10 @@ button {
   margin-right: 6px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .container {
   padding: 0 1rem;
   margin: 0 auto;
@@ -99,6 +103,21 @@ button {
 .btn--search:hover {
   background-color: rgba(29, 151, 108, 0.06);
   border-radius: 8px;
+}
+
+.btn--block {
+  margin: 1.5rem 0 1rem;
+  width: 100%;
+  padding: 0.875rem 0;
+}
+
+.btn--close {
+  position: absolute;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  font-size: 0;
 }
 
 /* Search bar */
@@ -161,7 +180,8 @@ button {
   margin: 1rem 1rem 0.625rem;
 }
 
-.card__title {
+.card__title,
+.modal__title {
   font-size: 1rem;
   font-weight: 600;
   color: var(--secondary-color);
@@ -208,6 +228,81 @@ button {
 
 .card__button {
   font-size: 0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  width: 90%;
+  max-width: 640px;
+  margin: 2rem auto;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+}
+
+.card__img--modal {
+  height: 160px;
+}
+
+.card__info--modal {
+  flex-grow: 0;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.card__schedule {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__day {
+  background-color: rgba(29, 151, 108, 0.06);
+  font-size: 0.875rem;
+  color: var(--gray-color);
+  text-align: center;
+  border-radius: 100px;
+  padding: 6px;
+  margin-right: 6px;
+  margin-top: 1rem;
+}
+
+.card__day:last-child {
+  margin-right: 0;
+}
+
+.card__location {
+  display: flex;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-color);
+}
+
+.card__location svg {
+  flex-shrink: 0;
+}
+
+.modal__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.modal__btn:disabled {
+  background-color: rgba(29, 151, 108, 0.06);
+  cursor: default;
 }
 
 /* Responsive */
