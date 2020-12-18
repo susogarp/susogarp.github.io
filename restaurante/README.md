@@ -1,12 +1,12 @@
 # Prueba restaurantes
 
-Hola, este es el resultado final de la prueba de front-end. Para ver en vivo [Click aqui](https://susogarcia.me/restaurantes/)
+Hola, este es el resultado final de la prueba de front-end. Para ver en vivo [Click aqui](https://susogarcia.me/restaurante/)
 
 ## Características
 
 - HTML5+ y CSS3+
 - Flexbox
-- Semantic HTML
+- HTML Semantico
 - JavaScript ES6+
 - Totalmente responsive
 - Totalmente libre de frameworks o librerías (a excepción de HeroIcons)

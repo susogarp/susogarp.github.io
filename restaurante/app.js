@@ -16,20 +16,12 @@ let query = '';
 input.addEventListener('input', () => {
    query = input.value.toLowerCase();
 
-   // Loop over the titles, if the query is not the same then is not showed
+   // Loop over the titles and locations, if the query is not the same then is not showed
    for (let i = 0; i < resNames.length; i++) {
-      if (resNames[i].textContent.toLowerCase().indexOf(query) > -1) {
+      if (resNames[i].textContent.toLowerCase().indexOf(query) > -1 || resLocations[i].textContent.toLocaleLowerCase().indexOf(query) > -1) {
          resNames[i].parentElement.parentElement.style.display = "block";
       } else {
          resNames[i].parentElement.parentElement.style.display = "none";
-      }
-   }
-
-   for (let i = 0; i < resLocations.length; i++) {
-      if (resLocations[i].textContent.toLocaleLowerCase().indexOf(query) > -1) {
-         resLocations[i].parentElement.parentElement.parentElement.style.display = "block";
-      } else {
-         resLocations[i].parentElement.parentElement.parentElement.style.display = "none";
       }
    }
 });
