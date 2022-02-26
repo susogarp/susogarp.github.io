@@ -1,8 +1,4 @@
 @media (min-width: 768px) {
-  #app {
-    margin: 0 2.5rem;
-  }
-
   .nav {
     margin-bottom: 3.75rem;
   }
@@ -44,10 +40,6 @@
 }
 
 @media (min-width: 1280px) {
-  #app {
-    margin: 0 3.75rem;
-  }
-
   .nav {
     margin-bottom: 5rem;
   }
@@ -66,5 +58,11 @@
 
   hr {
     display: none;
+  }
+}
+
+@media (max-width: 1320px) {
+  #app {
+    padding: 0 1rem;
   }
 }
