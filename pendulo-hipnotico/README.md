@@ -70,6 +70,65 @@ Señales de profundidad renderizadas a partir de esa física real:
 - **Estela con profundidad**: los puntos de la estela heredan el tamaño/alpha del momento en
   que se registraron, reforzando la sensación de recorrido en el espacio.
 
+## Publicar en GitHub Pages sin GitHub Actions
+
+Primero, importante: en `vite.config.ts` reemplaza `FALLBACK_REPO_NAME` por el nombre exacto
+de tu repositorio en GitHub (tal cual aparece en la URL `github.com/usuario/ESTE-NOMBRE`). Sin
+Actions no hay forma de calcularlo solo, así que hay que escribirlo una vez a mano — si no
+coincide exactamente, la app carga en blanco porque busca sus archivos en la ruta equivocada
+(esto es justo lo que pasó al subir `/dist` directamente).
+
+Dos formas de desplegar manualmente, de más a menos recomendada:
+
+### Opción A — paquete `gh-pages` (un solo comando cada vez)
+
+```bash
+npm i -D gh-pages
+```
+
+Agrega estos dos scripts a `package.json` (dentro de `"scripts"`):
+
+```json
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+```
+
+Luego, cada vez que quieras publicar:
+
+```bash
+npm run deploy
+```
+
+Esto compila y sube automáticamente el contenido de `dist/` a una rama `gh-pages` (la crea
+sola la primera vez). Por último, en GitHub: **Settings → Pages → Build and deployment →
+Source** → **Deploy from a branch** → rama `gh-pages`, carpeta `/ (root)` → Save.
+
+### Opción B — carpeta `/docs` en la rama `main` (sin ramas nuevas ni paquetes)
+
+```bash
+npm run build
+rm -rf docs
+cp -r dist docs
+git add docs
+git commit -m "deploy"
+git push
+```
+
+En GitHub: **Settings → Pages → Build and deployment → Source** → **Deploy from a branch** →
+rama `main`, carpeta `/docs` → Save.
+
+Cada vez que quieras actualizar la app publicada, repites esos mismos comandos (build → copiar
+a `docs` → commit → push).
+
+### Por qué la pantalla se veía en blanco
+
+`npm run build` genera referencias a los archivos (`/assets/index-xxxx.js`, etc.) usando la
+ruta base configurada en `vite.config.ts`. Sin el nombre correcto del repo ahí, esas rutas no
+coinciden con `https://usuario.github.io/tu-repo/`, el navegador no encuentra los archivos
+(404 en la consola) y React nunca llega a montarse — de ahí la pantalla vacía. Con
+`FALLBACK_REPO_NAME` bien puesto, este problema desaparece en cualquiera de las dos opciones
+de arriba.
+
 ## Interacción
 
 Toca/arrastra el medallón para fijar el ángulo de salida (igual que un péndulo real): al
