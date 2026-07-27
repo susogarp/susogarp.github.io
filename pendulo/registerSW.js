@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js', { scope: '/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/github.com/susogarp/susogarp.github.io/pendulo/sw.js', { scope: '/github.com/susogarp/susogarp.github.io/pendulo/' })})}

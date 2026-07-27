@@ -12,7 +12,7 @@ import { VitePWA } from "vite-plugin-pwa";
 // y si lo usas, la ruta base se calcula sola. Si compilas en tu máquina y subes /dist a mano
 // (sin Actions), esa variable no existe: reemplaza el texto de abajo por el nombre real de tu
 // repositorio para que las rutas de los archivos generados apunten al lugar correcto.
-var FALLBACK_REPO_NAME = "github.com/susogarp/susogarp.github.io/pendulo-hipnotico"; // <- pon aquí el nombre exacto de tu repo en GitHub
+var FALLBACK_REPO_NAME = "github.com/susogarp/susogarp.github.io/pendulo"; // <- pon aquí el nombre exacto de tu repo en GitHub
 var repoName = (_b = (_a = process.env.GITHUB_REPOSITORY) === null || _a === void 0 ? void 0 : _a.split("/")[1]) !== null && _b !== void 0 ? _b : FALLBACK_REPO_NAME;
 var isUserOrgPage = (_c = repoName === null || repoName === void 0 ? void 0 : repoName.endsWith(".github.io")) !== null && _c !== void 0 ? _c : false;
 var base = repoName && !isUserOrgPage ? "/".concat(repoName, "/") : "/";
