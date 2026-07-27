@@ -1,0 +1,106 @@
+@import './tokens.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-void);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  position: relative;
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--safe-top);
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+}
+
+.app__header {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-4) var(--space-6) var(--space-2);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  pointer-events: none;
+}
+
+.app__title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.app__subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.app__stage-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.pendulum-stage {
+  position: absolute;
+  inset: 0;
+}
+
+.pendulum-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+
+.pendulum-canvas:active {
+  cursor: grabbing;
+}
+
+.app__install-hint {
+  position: absolute;
+  bottom: calc(var(--space-4) + var(--safe-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  font-size: 0.72rem;
+  color: var(--color-text-faint);
+  background: rgba(16, 16, 23, 0.6);
+  border: 1px solid var(--color-hairline);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pendulum-canvas {
+    /* La física sigue corriendo (es el contenido), pero evitamos transiciones CSS extra */
+    transition: none !important;
+  }
+}
